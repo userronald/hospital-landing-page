@@ -4,7 +4,7 @@ import { IoMailOutline } from "react-icons/io5";
 const Topbar = () => {
   return (
     <div className="bg-[#00ADB5] text-white py-2">
-      <div className="container mx-auto px-32 flex justify-between items-center">
+      <div className="container mx-auto px-24 flex justify-between items-center">
         {/* Left Section */}
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-2">
