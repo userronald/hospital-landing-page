@@ -1,12 +1,15 @@
-import Navbar from "./desktop/navbar";
-import Topbar from "./desktop/topbar";
+import DesktopMenu from "./desktop/desktopMenu";
+import MobileMenu from "./mobile/mobileMenu";
+import useMediaQuery from "../../hooks/useMediaQuery";
+
 
 const Header = () => {
+
+  const isDesktop = useMediaQuery("(min-width:1024px)") 
   return (
-    <>
-      <Topbar />
-      <Navbar />
-    </>
+    <header className="relative z-50">
+      {isDesktop ? <DesktopMenu />  :<MobileMenu />}
+    </header>
   );
 };
 
