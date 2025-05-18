@@ -54,28 +54,31 @@ const MobileMenu = ()=>{
             </div>
           </div>
 
-          {isOpen && (
-            <div className="mx-5 px-2 bg-[red]">
-              <div className="flex flex-col gap-y-8 pb-6 pt-4">
-                <nav>
-                  <ul >
-                    <>
-                      {mobileHeaderNavLinks.map((link) => (
-                        <MobileMenuLink
-                        
-                          key={link.label}
-                          label={link.label}
-                          href={link.href}
-                          onClose={handleCloseMobileMenu}
-                          
-                        />
-                      ))}
-                    </>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          )}
+          <div className={`absolute left-0 top-18 z-50 w-88 
+                           bg-[red] mx-6 px-6 py-6 shadow-lg transition-all 
+                          duration-300 ease-in-out transform md:hidden 
+                          ${isOpen ? "translate-y-0 opacity-100 visible" 
+                          :"-translate-y-0 opacity-0 invisible"}
+                           `}> 
+            {isOpen && (
+              
+                  <nav>
+                    <ul className="flex flex-col gap-y-6">
+                      <>
+                        {mobileHeaderNavLinks.map((link) => (
+                          <MobileMenuLink
+                            key={link.label}
+                            label={link.label}
+                            href={link.href}
+                            onClose={handleCloseMobileMenu}
+                          />
+                        ))}
+                      </>
+                    </ul>
+                  </nav>
+                
+            )}
+          </div>
         </div>
       </div>
     );

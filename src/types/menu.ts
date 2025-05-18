@@ -6,7 +6,13 @@ export interface MenuLinkProps{
 
 
 export type MobileMenuLinkProps = MenuLinkProps &{
-         onClose?:()=>void;
-      
+         onClose?:()=>void;    
+}
+
+export interface HeroSliderProps{
+    heading?:string;
+    description?:string;
+    imageUrl?:string;
+    altText?:string;
 }
 

@@ -9,12 +9,11 @@ export default function MobileMenuLink({
     
 
     return (
-      <li key={label}>
-        <Link
-          to={href}
-          onClick={onClose}
-          className="hover:text-[#00adb5] transition-colors duration-200"
-        >
+      <li
+        key={label}
+        className="hover:text-[#00adb5] transition-colors duration-200"
+      >
+        <Link to={href} onClick={onClose}>
           {label}
         </Link>
       </li>
