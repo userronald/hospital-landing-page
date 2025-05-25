@@ -16,20 +16,17 @@ const HeroSlider=()=>{
     return (
       <>
         <div className="relative w-full h-[80vh] overflow-hidden">
-          {heroSliderData.map((slide, index) => (
-            <div
-              key={slide.altText}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-              }`}
-              style={{
-                backgroundImage: `url(${slide.imageUrl})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="h-full w-full flex items-center px-6 md:px-16 lg:px-28 bg-gradient-to-r from-[#00adb5] via-[#00adb5]/80 to-transparent">
-                <div className="w-full h-full flex items-center">
+          <div
+            className="flex transition-transform duration-[1500ms] ease-in-out"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
+            {heroSliderData.map((slide,index) => (
+              <div
+                key={`slide-${index}`}
+                className="w-full flex-shrink-0 h-[80vh] bg-cover bg-center"
+                style={{ backgroundImage: `url(${slide.imageUrl})` }}
+              >
+                <div className="h-full w-full flex items-center px-6 md:px-16 lg:px-28 bg-gradient-to-r from-[#00adb5] via-[#00adb5]/80 to-transparent">
                   <div className="max-w-xl text-white space-y-6">
                     <h1 className="text-3xl md:text-5xl font-bold">
                       {slide.heading}
@@ -41,8 +38,8 @@ const HeroSlider=()=>{
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
 
           {/* Dots Pagination */}
           <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-3">

@@ -65,7 +65,7 @@ export const heroSliderData: HeroSliderProps[] = [
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
     imageUrl: "/images/slider/slider-1.jpg",
-    altText: "Cure Well",
+    altText: "Hustle",
     buttonText: "Learn More",
   },
 
@@ -74,7 +74,7 @@ export const heroSliderData: HeroSliderProps[] = [
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
     imageUrl: "/images/slider/slider-2.jpg",
-    altText: "Cure Well",
+    altText: "Loyalty",
     buttonText: "make Appointment",
   },
 
@@ -83,7 +83,7 @@ export const heroSliderData: HeroSliderProps[] = [
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
     imageUrl: "/images/slider/slider-3.jpg",
-    altText: "Cure Well",
+    altText: "Respect",
     buttonText: "Our Services",
   },
 ];
