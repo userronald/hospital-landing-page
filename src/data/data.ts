@@ -94,8 +94,8 @@ export const aboutUsSectionData: AboutusSectionProps[] = [
     whtWeDoHeading: "What We Provide for Your Health",
     whtWeDoDescription:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumyeirmod tempor invidunt ut labore et dolore magn.",
-    aboutUsBgImage: "",
-    aboutUsDNAImage: "",
+    aboutUsBgImage: "/images/aboutUs/graph.png",
+    aboutUsDNAImage: "/images/aboutUs/dna.png",
     iconImage: [
       {
         src: "/images/aboutUs/icon-1.png",
@@ -133,5 +133,7 @@ export const aboutUsSectionData: AboutusSectionProps[] = [
     aboutUsDescription:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sqit consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
     aboutUsButton: "Learn More",
+    aboutUsDoctorImage: "/images/aboutUs/pixelated-doctors.png",
+    
   },
 ];

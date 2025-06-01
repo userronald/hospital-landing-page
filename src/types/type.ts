@@ -30,5 +30,6 @@ export interface AboutusSectionProps {
     aboutUsBgImage?:string;
     aboutUsDNAImage?:string;
     aboutUsDoctorImage?:string;
+    
 }
 
