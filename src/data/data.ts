@@ -4,6 +4,7 @@ import {
   HeroSliderProps,
   AboutusSectionProps,
   ServiceSectionProps,
+  TestimonialSectionProps,
 } from "../types/type";
 
 export const menuLinkData: MenuLinkProps[] = [
@@ -144,10 +145,117 @@ export const serviceSectionData: ServiceSectionProps[] = [
   {
     subHeading: "Services",
     mainHeading: "Our Healthcare Services",
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumyeirmod tempor invidunt ut labore et dolore magn.",
-    iconImage:[{
-      src:"/images/service/heart-rate.png",
-      altText:"Cardiology"
-    }]
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumyeirmod tempor invidunt ut labore et dolore magn.",
+    iconImage: [
+      {
+        src: "/images/service/heart-rate.png",
+        altText: "Cardiology",
+      },
+      {
+        src: "/images/service/neurology.png",
+        altText: "Neurology",
+      },
+      {
+        src: "/images/service/stomach.png",
+        altText: "Gastroenterology",
+      },
+      {
+        src: "/images/service/bones.png",
+        altText: "Orthopedics",
+      },
+      {
+        src: "/images/service/uterus.png",
+        altText: "Gynecology",
+      },
+      {
+        src: "/images/service/dental-surgery.png",
+        altText: "Dental Surgery",
+      },
+    ],
+    iconText: [
+      {
+        text: "Cardiology",
+      },
+      {
+        text: "Neurology",
+      },
+      {
+        text: "Gastroenterology",
+      },
+      {
+        text: "Orthopedics",
+      },
+      {
+        text: "Gynecology",
+      },
+      {
+        text: "Dental Surgery",
+      },
+    ],
+
+    iconDescription: [
+      {
+        text: "Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
+      },
+      {
+        text: "Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
+      },
+    ],
+
+    iconButton:"Read More"
   },
 ];
+
+  export const TestimonialSectionData: TestimonialSectionProps[] = [
+    {
+      subHeading: "Testimonials",
+      mainHeading: "What Our Patients Says",
+      testimonials: [
+        {
+          text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy.",
+        },
+        {
+          text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy.",
+        },
+        {
+          text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy.",
+        },
+      ],
+      testimonialReviewer:[
+        {
+         text:"Fara"
+      },
+      {
+        text:"Jeff"
+      },
+      {
+        text:"Rafiq"
+      }
+    ],
+
+    reviewerDesignation:[
+      {
+        text:"Digital Marketer"
+      },
+      {
+        text:"Human Resource"
+      },
+      {
+        text:"Web Developer"
+      }
+    ]
+    },
+  ];

@@ -44,6 +44,15 @@ export interface ServiceSectionProps{
     iconImage?:Array<{src:string;altText:string}>;
     iconText?:Array<{text:string}>;
     iconDescription?:Array<{text:string}>;
-    iconButton?:Array<{text:string}>;
+    iconButton?:string;
+}
+
+//Testimonial section
+export interface TestimonialSectionProps{
+    subHeading?:string;
+    mainHeading?:string;
+    testimonials?:Array<{text:string}>;
+    testimonialReviewer?:Array<{text:string}>
+    reviewerDesignation?:Array<{text:string}>
 }
 
