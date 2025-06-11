@@ -6,19 +6,16 @@ interface LogoProps {
   altText?: string;
 }
 
-
-export default  function Logo({
-    href="/",
-    logoUrl,
-    altText = "Logo"
-}:LogoProps){
-    return(
-        <Link to={href}>
-            <img  
-               src={logoUrl} 
-               alt={altText}
-               className="object-contain object-left w-full h-full" />
-        </Link>
-
-    )
+export default function Logo({
+  href = "/",
+  altText = "Cure Well",
+  logoUrl,
+}: LogoProps) {
+  return (
+    <>
+      <Link to={href}>
+        <img src={logoUrl} alt={altText} />
+      </Link>
+    </>
+  );
 }

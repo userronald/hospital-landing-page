@@ -3,3 +3,8 @@ export interface MenuLinkProps{
     label:string;
 };
 
+
+export type MobileHeaderNavLinkProps = MenuLinkProps & {
+    onClose?: ()=>void;
+    onChildOpen?: (label:string)=>void;
+};

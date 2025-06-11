@@ -1,10 +1,12 @@
 import Header from "./components/header/header";
+import Home from "./components/home/home";
+
 
 function App() {
   return (
     <>
       <Header />
-      <h1 className="text-3xl font-bold underline text-red-700">Hi</h1>
+      <Home />
     </>
   );
 }
