@@ -9,6 +9,7 @@ export type MobileMenuLinkProps = MenuLinkProps &{
          onClose?:()=>void;    
 }
 
+// Slider Section
 export interface HeroSliderProps{
     heading?:string;
     description?:string;
@@ -17,6 +18,8 @@ export interface HeroSliderProps{
     buttonText?:string;
 }
 
+
+// About Us section
 export interface AboutusSectionProps {
     whtWeDoSubText?:string;
     whtWeDoHeading?:string;
@@ -31,5 +34,16 @@ export interface AboutusSectionProps {
     aboutUsDNAImage?:string;
     aboutUsDoctorImage?:string;
     
+}
+
+//Services Section
+export interface ServiceSectionProps{
+    subHeading?:string;
+    mainHeading?:string;
+    description?:string;
+    iconImage?:Array<{src:string;altText:string}>;
+    iconText?:Array<{text:string}>;
+    iconDescription?:Array<{text:string}>;
+    iconButton?:Array<{text:string}>;
 }
 

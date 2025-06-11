@@ -3,6 +3,7 @@ import {
   MobileMenuLinkProps,
   HeroSliderProps,
   AboutusSectionProps,
+  ServiceSectionProps,
 } from "../types/type";
 
 export const menuLinkData: MenuLinkProps[] = [
@@ -134,5 +135,19 @@ export const aboutUsSectionData: AboutusSectionProps[] = [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sqit consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
     aboutUsButton: "Learn More",
     aboutUsDoctorImage: "/images/aboutUs/pixelated-doctors.png",
+  },
+];
+
+
+
+export const serviceSectionData: ServiceSectionProps[] = [
+  {
+    subHeading: "Services",
+    mainHeading: "Our Healthcare Services",
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumyeirmod tempor invidunt ut labore et dolore magn.",
+    iconImage:[{
+      src:"/images/service/heart-rate.png",
+      altText:"Cardiology"
+    }]
   },
 ];
