@@ -9,7 +9,8 @@ const AboutUsSection = () => {
           <section className="wht-we-do pt-20 pb-10 bg-[#EEF6F9] relative z-10">
             <div className="container mx-auto px-4">
               <div className="text-center mb-10">
-                <p className="text-primary text-sm font-semibold uppercase mb-2">
+                
+                <p className="font-raleway text-primary text-sm font-semibold uppercase mb-2">
                   {item.whtWeDoSubText}
                 </p>
                 <h2 className="text-3xl font-bold text-dark mb-4">
