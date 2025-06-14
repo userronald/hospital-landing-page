@@ -56,3 +56,47 @@ export interface TestimonialSectionProps{
     reviewerDesignation?:Array<{text:string}>
 }
 
+//faqsection
+export interface FaqSectionProps{
+    subHeading?:string;
+    mainHeading?:string;
+    faqQuestions?:Array<{text:string}>
+    faqAnswers?:Array<{text:string}>;
+}
+
+//teamSection
+export interface TeamSectionProps{
+    subHeading?:string;
+    mainHeading?:String;
+    description?:string;
+    teamImage?:Array<{src:string;altText:string;}>
+    teamIcon?:Array<{src:string;altText:string}>
+    teamMembersName?:Array<{text:string}>
+    teamMembersDesignation?:Array<{text:string}>
+}
+
+//newsletterSection
+export interface NewsLetterSectionProps{
+    mainHeading?:string;
+    description?:string;
+    backgroundImage?:string;
+    socialMediaIcons?:Array<{src:string;altText:string}>;
+    iconImage?:string;
+    iconText?:string;
+    iconDescription?:string;
+    form?:{
+        emailPlaceholder?:string;
+        buttonText?:string;
+
+    }
+}
+
+//callToActionSection
+export interface CallToActionProps{
+    subHeading?:string;
+    mainHeading?:string;
+    description?:string;
+    form?:{
+
+    }
+}

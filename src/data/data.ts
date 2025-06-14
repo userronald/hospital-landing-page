@@ -5,6 +5,9 @@ import {
   AboutusSectionProps,
   ServiceSectionProps,
   TestimonialSectionProps,
+  FaqSectionProps,
+  TeamSectionProps,
+  NewsLetterSectionProps,
 } from "../types/type";
 
 export const menuLinkData: MenuLinkProps[] = [
@@ -259,3 +262,108 @@ export const serviceSectionData: ServiceSectionProps[] = [
     ]
     },
   ];
+
+  export const FaqSectionData: FaqSectionProps[] = [
+    {
+      subHeading: "Frequently Asked Questions",
+      mainHeading: "Get Every Single Answers There if you want",
+      faqQuestions: [
+        {
+          text: "What is an Academic medical center",
+        },
+        {
+          text: "What is an Academic medical center",
+        },
+        {
+          text: "What is an Academic medical center",
+        },
+        {
+          text: "What is an Academic medical center",
+        },
+      ],
+      faqAnswers: [
+        {
+          text: "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt. sadipscing elitr, sed dinonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor.",
+        },
+        {
+          text: "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt. sadipscing elitr, sed dinonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor.",
+        },
+        {
+          text: "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt. sadipscing elitr, sed dinonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor.",
+        },
+        {
+          text: "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt. sadipscing elitr, sed dinonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor.",
+        },
+      ],
+    },
+  ];
+
+
+  export const TeamSectionData: TeamSectionProps[] = [
+    {
+      subHeading: "Team",
+      mainHeading: "Meet Our Doctors",
+      description:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumyeirmod tempor invidunt ut labore et dolore magn.",
+      teamMembersName: [
+        {
+          text: "Dr. Ubayd",
+        },
+        {
+          text: "Dr. Muhammad Rafique",
+        },
+        {
+          text: "Sigmund Freud",
+        },
+        {
+          text: "Laiba Roshan",
+        },
+        {
+          text: "Nawal Marwan",
+        },
+        {
+          text: "Joe Black",
+        },
+        {
+          text: "Sammy Jankis",
+        },
+        {
+          text: "Hazel Grace",
+        },
+      ],
+      teamMembersDesignation: [
+        {
+          text: "Orthopedics",
+        },
+        {
+          text: "Gastroenterology",
+        },
+        {
+          text: "Neurology",
+        },
+        {
+          text: "Gastroenterology",
+        },
+        {
+          text: "Orthopedics",
+        },
+        {
+          text: "Neurology",
+        },
+        {
+          text: "cardiology",
+        },
+        {
+          text: "Gynecology",
+        },
+      ],
+    },
+  ];
+
+  export const NewsletterSectionData :NewsLetterSectionProps[]=[
+    {
+      mainHeading:"Subscribe Our Newsletter",
+      description:"Lorem ipsum dolor sit amet, consetetur sadiping elitr, sed dinonumyeirmod tempor invidunt ut labore."
+    }
+  
+  ]
