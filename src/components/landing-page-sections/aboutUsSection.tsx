@@ -61,7 +61,7 @@ const AboutUsSection = () => {
             <div className="container  px-4 flex flex-col md:flex-row items-center gap-10">
               {/* Left side */}
               <div className=" mx-56 w-full flex flex-col items-center text-center">
-                <p className="text-primary text-xl text-[#00adb5] font-semibold uppercase mb-4">
+                <p className="text-primary text-xl text-[#00adb5] font-semibold mb-4">
                   {item.aboutUsSubText}
                 </p>
                 <h2 className="font-raleway text-5xl font-extrabold text-gray-800 mb-6">
