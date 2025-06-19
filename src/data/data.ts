@@ -267,32 +267,26 @@ export const serviceSectionData: ServiceSectionProps[] = [
     {
       subHeading: "Frequently Asked Questions",
       mainHeading: "Get Every Single Answers There if you want",
-      faqQuestions: [
+      faqItems: [
         {
-          text: "What is an Academic medical center",
+          question: "What is an Academic medical center",
+          answer:
+            "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
         },
         {
-          text: "What is an Academic medical center",
+          question: "What is an Academic medical center",
+          answer:
+            "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
         },
         {
-          text: "What is an Academic medical center",
+          question: "What is an Academic medical center",
+          answer:
+            "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
         },
         {
-          text: "What is an Academic medical center",
-        },
-      ],
-      faqAnswers: [
-        {
-          text: "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt. sadipscing elitr, sed dinonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor.",
-        },
-        {
-          text: "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt. sadipscing elitr, sed dinonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor.",
-        },
-        {
-          text: "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt. sadipscing elitr, sed dinonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor.",
-        },
-        {
-          text: "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt. sadipscing elitr, sed dinonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor.",
+          question: "What is an Academic medical center",
+          answer:
+            "Lorem ipsum dolor sit amet, consetet Lorem ipsum dolor sit amet, consetet sadipscing elitr, sed dinonumy eirmod tempor invidunt.",
         },
       ],
     },

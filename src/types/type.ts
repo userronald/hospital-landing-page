@@ -57,15 +57,21 @@ export interface TestimonialSectionProps{
 }
 
 //faqsection
+
+export interface FaqItem{
+    question:string;
+    answer:string;
+}
+
 export interface FaqSectionProps{
+   
     subHeading?:string;
     mainHeading?:string;
-    faqQuestions?:Array<{text:string}>
-    faqAnswers?:Array<{text:string}>;
+   faqItems:FaqItem[];
 }
 
 //teamSection
-export interface TeamSectionProps{
+export interface TeamSectionProps{  
     subHeading?:string;
     mainHeading?:String;
     description?:string;
