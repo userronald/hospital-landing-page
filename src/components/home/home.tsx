@@ -1,4 +1,5 @@
 import AboutUsSection from "../landing-page-sections/aboutUsSection";
+import CallToAction from "../landing-page-sections/callToAction";
 import FaqSection from "../landing-page-sections/faqSection";
 import HeroSlider from "../landing-page-sections/heroSlider"
 import ServiceSection from "../landing-page-sections/serviceSection";
@@ -13,6 +14,7 @@ const Home = ()=>{
         <ServiceSection />
         <TestimonialSection />
         <FaqSection />
+        <CallToAction />
         </>
     )
 }

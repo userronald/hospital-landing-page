@@ -49,6 +49,7 @@ export interface ServiceSectionProps{
 
 //Testimonial section
 export interface TestimonialSectionProps{
+    testimonialImages?:Array<{src:string; altText:string}>
     subHeading?:string;
     mainHeading?:string;
     testimonials?:Array<{text:string}>;
@@ -65,6 +66,7 @@ export interface FaqItem{
 
 export interface FaqSectionProps{
    
+    faqImage?:string;
     subHeading?:string;
     mainHeading?:string;
    faqItems:FaqItem[];

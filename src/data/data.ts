@@ -224,6 +224,28 @@ export const serviceSectionData: ServiceSectionProps[] = [
 
   export const TestimonialSectionData: TestimonialSectionProps[] = [
     {
+      testimonialImages: [
+        {
+          src: "/images/testimonial/tetimonial-1.webp",
+          altText: "Rafa",
+        },
+        {
+          src: "/images/testimonial/testimonial-2.webp",
+          altText: "Shalini",
+        },
+        {
+          src: "/images/testimonial/testimonial-3.webp",
+          altText: "Jeffi",
+        },
+        {
+          src: "/images/testimonial/testimonial-4.webp",
+          altText: "Hazel",
+        },
+        {
+          src: "/images/testimonial/testimonial-5.webp",
+          altText: "Thulasi",
+        },
+      ],
       subHeading: "Testimonials",
       mainHeading: "What Our Patients Says",
       testimonials: [
@@ -237,34 +259,35 @@ export const serviceSectionData: ServiceSectionProps[] = [
           text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy.",
         },
       ],
-      testimonialReviewer:[
+      testimonialReviewer: [
         {
-         text:"Fara"
-      },
-      {
-        text:"Jeff"
-      },
-      {
-        text:"Rafiq"
-      }
-    ],
+          text: "Fara",
+        },
+        {
+          text: "Jeff",
+        },
+        {
+          text: "Rafiq",
+        },
+      ],
 
-    reviewerDesignation:[
-      {
-        text:"Digital Marketer"
-      },
-      {
-        text:"Human Resource"
-      },
-      {
-        text:"Web Developer"
-      }
-    ]
+      reviewerDesignation: [
+        {
+          text: "Digital Marketer",
+        },
+        {
+          text: "Human Resource",
+        },
+        {
+          text: "Web Developer",
+        },
+      ],
     },
   ];
 
   export const FaqSectionData: FaqSectionProps[] = [
     {
+      faqImage: "/images/faq/faqImage.webp",
       subHeading: "Frequently Asked Questions",
       mainHeading: "Get Every Single Answers There if you want",
       faqItems: [
