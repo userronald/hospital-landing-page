@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: Raleway;
-    src: url("../public/fonts/raleway/Raleway-Light.ttf") 
+    src: url("../fonts/raleway/Raleway-Light.ttf") 
 }
 
 
 /* @font-face {
     font-family: Raleway;
-    src: url("../public/fonts/raleway/Raleway-Regular.ttf") format("truetype");
+    src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 } */

@@ -9,6 +9,28 @@ export type MobileMenuLinkProps = MenuLinkProps &{
          onClose?:()=>void;    
 }
 
+// Footer menu 
+
+export type MapData={
+    latitude:number;
+    longitude:number;
+    zoom?:number;
+    embedUrl?:string;
+}
+export interface FootermenuProps{
+    bgImage?:string;
+    href?:string;
+    label?:string;
+    appointmentHref?:string;
+    appointmentLabel?:string;
+    quicklinkTitle?:string
+    mapTitle?:string
+    copyrighttext?:string
+    footerDescription?:string;
+    socialIcons?:Array<{src:string;altText:string}>
+    map?:MapData
+}
+
 // Slider Section
 export interface HeroSliderProps{
     heading?:string;
@@ -45,10 +67,12 @@ export interface ServiceSectionProps{
     iconText?:Array<{text:string}>;
     iconDescription?:Array<{text:string}>;
     iconButton?:string;
+    bgImage?:string;
 }
 
 //Testimonial section
 export interface TestimonialSectionProps{
+    bgImage?:string;
     testimonialImages?:Array<{src:string; altText:string}>
     subHeading?:string;
     mainHeading?:string;

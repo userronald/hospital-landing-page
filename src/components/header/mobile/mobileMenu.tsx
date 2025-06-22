@@ -39,44 +39,49 @@ const MobileMenu = ()=>{
     return (
       <div className="w-full">
         <div className="relative">
-          <div className="bg-[#00ADB5] py-3 px-6 shadow-mobile-menu">
+          <div className="bg-white py-3 px-6 shadow-mobile-menu">
             <div className="flex justify-between items-center">
-              <Logo logoUrl="images/logo.png" />
+              <div className="w-36 sm:w-40 md:w-48 lg:w-56 xl:w-64">
+                <Logo logoUrl="images/cure_well.png" />
+              </div>
               <div>
                 <button onClick={handleOpenMobileMenu} type="button">
                   {!isOpen ? (
-                    <HiMenuAlt3 className="size-6 md:size-8 text-white" />
+                    <HiMenuAlt3 className="size-6 md:size-8 text-[#00adb5]" />
                   ) : (
-                    <IoMdClose className="size-6 md:size-8 text-white" />
+                    <IoMdClose className="size-6 md:size-8 text-[#00adb5]" />
                   )}
                 </button>
               </div>
             </div>
           </div>
 
-          <div className={`absolute left-0 top-18 z-50 w-88 
-                           bg-[red] mx-6 px-6 py-6 shadow-lg transition-all 
+          <div
+            className={`absolute left-0 top-18 z-50 w-88 
+                           bg-white mx-6 px-6 py-6 shadow-lg transition-all 
                           duration-300 ease-in-out transform md:hidden 
-                          ${isOpen ? "translate-y-0 opacity-100 visible" 
-                          :"-translate-y-0 opacity-0 invisible"}
-                           `}> 
+                          ${
+                            isOpen
+                              ? "translate-y-0 opacity-100 visible"
+                              : "-translate-y-0 opacity-0 invisible"
+                          }
+                           `}
+          >
             {isOpen && (
-              
-                  <nav>
-                    <ul className="flex flex-col gap-y-6">
-                      <>
-                        {mobileHeaderNavLinks.map((link) => (
-                          <MobileMenuLink
-                            key={link.label}
-                            label={link.label}
-                            href={link.href}
-                            onClose={handleCloseMobileMenu}
-                          />
-                        ))}
-                      </>
-                    </ul>
-                  </nav>
-                
+              <nav>
+                <ul className="flex flex-col gap-y-6">
+                  <>
+                    {mobileHeaderNavLinks.map((link) => (
+                      <MobileMenuLink
+                        key={link.label}
+                        label={link.label}
+                        href={link.href}
+                        onClose={handleCloseMobileMenu}
+                      />
+                    ))}
+                  </>
+                </ul>
+              </nav>
             )}
           </div>
         </div>

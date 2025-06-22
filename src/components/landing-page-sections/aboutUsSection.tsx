@@ -1,10 +1,13 @@
 import { aboutUsSectionData } from "../../data/data";
+import { motion } from "framer-motion";
+
+
 
 const AboutUsSection = () => {
   return (
     <>
       {aboutUsSectionData.map((item, index) => (
-        <section key={index} className="space-y-10">
+        <section key={index} className="space-y-10" id="about">
           {/* Row 1: What We Do Section */}
           <section className="relative pt-20 pb-10 text-center bg-white">
             <div className="absolute top-0 left-0 z-0  ">
@@ -15,20 +18,40 @@ const AboutUsSection = () => {
               />
             </div>
             <div className="container mx-auto px-4">
-              <p className="font-raleway text-primary text-xl font-semibold  mb-5 text-[#00adb5]">
+              <motion.p
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="font-raleway text-primary text-xl font-semibold  mb-5 text-[#00adb5]"
+              >
                 {item.whtWeDoSubText}
-              </p>
-              <h2 className="font-raleway  text-5xl font-bold text-dark mb-8">
+              </motion.p>
+
+              <motion.h2
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="font-raleway  text-5xl font-bold text-dark mb-8"
+              >
                 {item.whtWeDoHeading}
-              </h2>
-              <p className="text-base text-body-color max-w-xl mx-auto text-lg text-gray-500">
+              </motion.h2>
+
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-base text-body-color max-w-xl mx-auto text-lg text-gray-500"
+              >
                 {item.whtWeDoDescription}
-              </p>
+              </motion.p>
             </div>
           </section>
 
           {/* Row 2: Graph Image */}
-          <div className="w-full px-40">
+          <div className="w-full px-4 sm:px-10 md:px-20 lg:px-40">
             <img
               src={item.aboutUsBgImage}
               alt="Graph Background"
@@ -61,15 +84,35 @@ const AboutUsSection = () => {
             <div className="container  px-4 flex flex-col md:flex-row items-center gap-10">
               {/* Left side */}
               <div className=" mx-56 w-full flex flex-col items-center text-center">
-                <p className="text-primary text-xl text-[#00adb5] font-semibold mb-4">
+                <motion.p
+                  initial={{ opacity: 0, y: -30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className="text-primary text-xl text-[#00adb5] font-semibold mb-4"
+                >
                   {item.aboutUsSubText}
-                </p>
-                <h2 className="font-raleway text-5xl font-extrabold text-gray-800 mb-6">
+                </motion.p>
+
+                <motion.h2
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="font-raleway text-5xl font-extrabold text-gray-800 mb-6"
+                >
                   {item.aboutUsHeading}
-                </h2>
-                <p className="text-lg text-gray-500 mb-6 text-center">
+                </motion.h2>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  viewport={{ once: true }}
+                  className="text-lg text-gray-500 mb-6 text-center"
+                >
                   {item.aboutUsDescription}
-                </p>
+                </motion.p>
                 <a
                   href="#"
                   className="inline-block px-6 py-3 text-white bg-[#00adb5] hover:bg-[#00adb5ab] transition rounded text-lg font-semibold mb-12"

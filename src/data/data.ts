@@ -8,6 +8,8 @@ import {
   FaqSectionProps,
   TeamSectionProps,
   NewsLetterSectionProps,
+  FootermenuProps,
+  CallToActionProps,
 } from "../types/type";
 
 export const menuLinkData: MenuLinkProps[] = [
@@ -17,23 +19,15 @@ export const menuLinkData: MenuLinkProps[] = [
   },
   {
     label: "About",
-    href: "#",
+    href: "#about",
   },
   {
     label: "Service",
-    href: "#",
-  },
-  {
-    label: "Doctor",
-    href: "#",
-  },
-  {
-    label: "Blog",
-    href: "#",
+    href: "#service",
   },
   {
     label: "Contact",
-    href: "#",
+    href: "#contact",
   },
 ];
 
@@ -44,23 +38,15 @@ export const mobileHeaderNavLinks: MobileMenuLinkProps[] = [
   },
   {
     label: "About",
-    href: "#",
+    href: "#about",
   },
   {
     label: "Service",
-    href: "#",
-  },
-  {
-    label: "Doctor",
-    href: "#",
-  },
-  {
-    label: "Blog",
-    href: "#",
+    href: "#service",
   },
   {
     label: "Contact",
-    href: "#",
+    href: "#contact",
   },
 ];
 
@@ -80,7 +66,7 @@ export const heroSliderData: HeroSliderProps[] = [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
     imageUrl: "/images/slider/slider-2.jpg",
     altText: "Loyalty",
-    buttonText: "make Appointment",
+    buttonText: "Make Appointment",
   },
 
   {
@@ -142,7 +128,7 @@ export const aboutUsSectionData: AboutusSectionProps[] = [
   },
 ];
 
-
+//Service section
 
 export const serviceSectionData: ServiceSectionProps[] = [
   {
@@ -218,12 +204,16 @@ export const serviceSectionData: ServiceSectionProps[] = [
       },
     ],
 
-    iconButton:"Read More"
+    iconButton:"Read More",
+    bgImage:"/images/service/shape-3.png"
+
   },
 ];
 
+// testimonial
   export const TestimonialSectionData: TestimonialSectionProps[] = [
     {
+      bgImage: "/images/testimonial/shape-4.png",
       testimonialImages: [
         {
           src: "/images/testimonial/tetimonial-1.webp",
@@ -258,16 +248,28 @@ export const serviceSectionData: ServiceSectionProps[] = [
         {
           text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy.",
         },
+        {
+          text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy.",
+        },
+        {
+          text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy.",
+        },
       ],
       testimonialReviewer: [
         {
-          text: "Fara",
+          text: "Farah Jeff",
         },
         {
-          text: "Jeff",
+          text: "Sheryl Daphne",
         },
         {
-          text: "Rafiq",
+          text: "Muhammad Rafiq",
+        },
+        {
+          text: "Maharaj Dheshingu",
+        },
+        {
+          text: "Thiribhuvaneshwaari",
         },
       ],
 
@@ -284,6 +286,8 @@ export const serviceSectionData: ServiceSectionProps[] = [
       ],
     },
   ];
+
+  // Faq
 
   export const FaqSectionData: FaqSectionProps[] = [
     {
@@ -315,7 +319,7 @@ export const serviceSectionData: ServiceSectionProps[] = [
     },
   ];
 
-
+// Team
   export const TeamSectionData: TeamSectionProps[] = [
     {
       subHeading: "Team",
@@ -377,6 +381,7 @@ export const serviceSectionData: ServiceSectionProps[] = [
     },
   ];
 
+  // newsLetter
   export const NewsletterSectionData :NewsLetterSectionProps[]=[
     {
       mainHeading:"Subscribe Our Newsletter",
@@ -384,3 +389,77 @@ export const serviceSectionData: ServiceSectionProps[] = [
     }
   
   ]
+
+  // Call to action
+
+  export const CallToActionData: CallToActionProps[] = [
+    {
+      subHeading: "Appoinment",
+      mainHeading: "Get Appoinment Now",
+      description:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumyeirmod tempor invidunt ut labore et dolore magn."
+    },
+  ];
+
+  // Footer
+
+  export const FooterSectionData: FootermenuProps[] = [
+    {
+  bgImage:""
+    },
+    {
+      label: "Home",
+      href: "/",
+    },
+    {
+      label: "About",
+      href: "#about",
+    },
+    {
+      label: "Service",
+      href: "#service",
+    },
+    {
+      label: "Contact",
+      href: "#contact",
+    },
+
+    {
+      appointmentLabel: "Cardiology",
+      appointmentHref: "#",
+    },
+    {
+      appointmentLabel: "Neurology",
+      appointmentHref: "#",
+    },
+    {
+      appointmentLabel: "Gastroenterology",
+      appointmentHref: "#",
+    },
+    {
+      appointmentLabel: "Routine Checkup",
+      appointmentHref: "#",
+    },
+    {
+      appointmentLabel: "Orthopedics",
+      appointmentHref: "#",
+    },
+    {
+  quicklinkTitle:"Quick Links",
+  mapTitle:"Medical Location"
+    },
+    {
+     copyrighttext:"Designed and Developed by Sahaya Ronaldo S"
+    },
+    {
+      footerDescription:
+        "Lorem ipsum dolor serit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolore magna aliquyam erat diam voluptua.",
+
+      map: {
+        latitude: 8.1334292,
+        longitude: 77.3208427,
+        zoom: 12,
+        embedUrl:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.781275657301!2d77.3208427!3d8.1334292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04fbb41c427e9d%3A0x9b0bb1eba78b9aa6!2sKalladivillai%20Sivanthaman%20St%2C%20Nagar%2C%20Muttom%2C%20Vellimalai%2C%20Tamil%20Nadu%20629202!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin",
+      },
+    },
+  ];
